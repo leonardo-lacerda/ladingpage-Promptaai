@@ -12,3 +12,6 @@ Allow: /
 
 User-agent: *
 Allow: /
+Disallow: /req
+
+Sitemap: https://promptaai.com.br/sitemap.xml

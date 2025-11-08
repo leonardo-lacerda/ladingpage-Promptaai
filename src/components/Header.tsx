@@ -12,13 +12,15 @@ const Header = () => {
         </div>
         
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#features" className="text-muted-foreground hover:text-foreground transition-smooth">Features</a>
-          <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-smooth">Preço</a>
+          <a href="#features" className="text-muted-foreground hover:text-foreground transition-smooth">Recursos</a>
+          <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-smooth">Preços</a>
           <a href="#cases" className="text-muted-foreground hover:text-foreground transition-smooth">Casos</a>
+          <a href="/solucoes/clinicas-whatsapp" className="text-muted-foreground hover:text-foreground transition-smooth">Soluções</a>
+          <a href="/guias" className="text-muted-foreground hover:text-foreground transition-smooth">Guias</a>
         </nav>
 
         <Button variant="cta" size="lg">
-          Começar Agora
+          Começar agora
         </Button>
       </div>
     </header>

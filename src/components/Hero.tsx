@@ -20,9 +20,8 @@ const Hero = () => {
               </div>
               
               <h1 className="text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                Seu negócio com{" "}
-                <span className="text-gradient">inteligência artificial</span>{" "}
-                no WhatsApp
+                Automação de atendimento no WhatsApp com {" "}
+                <span className="text-gradient">inteligência artificial</span>
               </h1>
               
               <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">

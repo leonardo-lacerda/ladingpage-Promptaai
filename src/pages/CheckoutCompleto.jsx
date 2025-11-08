@@ -1,5 +1,6 @@
 // CheckoutCompleto.jsx
 import { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -149,7 +150,14 @@ const CheckoutCompleto = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-surface to-primary/5">
+    <>
+      <Helmet>
+        <title>Checkout Completo — promptAI</title>
+        <meta name="description" content="Finalize sua assinatura do Pacote Completo do promptAI." />
+        <meta name="robots" content="noindex, nofollow" />
+        <link rel="canonical" href="https://promptaai.com.br/checkout/completo" />
+      </Helmet>
+      <div className="min-h-screen bg-gradient-to-br from-background via-surface to-primary/5">
       <div className="container mx-auto px-6 py-8">
         {/* Header */}
         <div className="mb-8">
@@ -478,7 +486,7 @@ const CheckoutCompleto = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

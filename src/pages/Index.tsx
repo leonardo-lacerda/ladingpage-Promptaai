@@ -7,10 +7,17 @@ import HowItWorks from "@/components/HowItWorks";
 import LeadCapture from "@/components/LeadCapture";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
+import { Helmet } from "react-helmet-async";
+import FAQ from "@/components/FAQ";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Automação de Atendimento no WhatsApp com IA | PromptaAI</title>
+        <meta name="description" content="Automação de atendimento no WhatsApp com IA. Assistente virtual e chatbot para clínicas, consultórios e pequenas empresas. Agendamentos automáticos e vendas 24/7." />
+        <link rel="canonical" href="https://promptaai.com.br/" />
+      </Helmet>
       <Header />
       <main>
         <Hero />
@@ -31,6 +38,9 @@ const Index = () => {
         </div>
         <div className="animate-scale-in [animation-delay:3s] opacity-0 [animation-fill-mode:forwards]">
           <FinalCTA />
+        </div>
+        <div className="animate-fade-up [animation-delay:3.2s] opacity-0 [animation-fill-mode:forwards]">
+          <FAQ />
         </div>
       </main>
       <Footer />

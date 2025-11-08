@@ -1,5 +1,6 @@
 // Essencial Checkout Page
 import { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -142,7 +143,8 @@ const CheckoutEssencial = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-surface to-muted/30">
+    
+      <div className="min-h-screen bg-gradient-to-br from-background via-surface to-muted/30">
       <div className="container mx-auto px-6 py-8">
         {/* Header */}
         <div className="mb-8">
@@ -421,7 +423,7 @@ const CheckoutEssencial = () => {
           </div>
         </div>
       </div>
-    </div>
+    
   );
 };
 
